@@ -38,12 +38,7 @@ const routes: Array<RouteConfig> = [
   {
     path: '*',
     redirect: '/404'
-  },
-  {
-  path: '/editor',
-  name: 'ProjectEditor',
-  component: () => import('@/views/ProjectEditor.vue')
-}
+  }
 
 ]
 
