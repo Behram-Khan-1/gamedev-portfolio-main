@@ -29,6 +29,12 @@ new ProjectData("project-1", "test", "/img/projects/project-1-icon.png", `
 </div>`, "#23bd69", false, true, "professional", "Self", true),
 
 
+new ProjectData("project-11", "abasdf", "/img/projects/6.gif", `
+<div class="paragraph">
+  <strong>abasdf</strong>
+</div>`, "#23bd69", false, false, "indie", "", true, "gif"),
+
+
 new ProjectData("project-8", "test-prof", "/img/projects/project-8-icon.png", `
 <div class="paragraph">
   <strong>test-prof</strong> asdfasdf

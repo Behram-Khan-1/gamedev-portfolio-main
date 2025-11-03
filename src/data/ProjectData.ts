@@ -3,6 +3,7 @@ export default class ProjectData {
     name: string;
     htmlDescription: string;
     iconUrl: string;
+    mediaType: 'image' | 'gif' | 'video' = 'image'; // Add this
     isWide: boolean;
     isHigh: boolean;
     accentColor: string;
@@ -20,12 +21,14 @@ export default class ProjectData {
         isWide = false,
         category?: 'indie' | 'professional' | 'gamejams',
         company?: string,
-        clickable = true
+        clickable = true,
+        mediaType: 'image' | 'gif' | 'video' = 'image' // Add this parameter
     ) {
         this.id = id;
         this.name = name;
         this.htmlDescription = html;
         this.iconUrl = iconUrl;
+        this.mediaType = mediaType; // Set the media type
         this.isHigh = isHigh;
         this.isWide = isWide;
         this.accentColor = accentColor;

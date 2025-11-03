@@ -11,18 +11,47 @@
               'high': project.isHigh,
               'not-clickable': project.clickable === false
             }">
-            <div class="project-item-image" :style="{ 'background-image': 'url(' + project.iconUrl + ')' }">
+            
+            <!-- Media Display -->
+            <div class="project-item-media">
+              <!-- Image -->
+              <img 
+                v-if="project.mediaType === 'image'" 
+                :src="project.iconUrl" 
+                :alt="project.name"
+                class="project-media"
+              />
+              
+              <!-- GIF -->
+              <img 
+                v-else-if="project.mediaType === 'gif'" 
+                :src="project.iconUrl" 
+                :alt="project.name"
+                class="project-media gif"
+              />
+              
+              <!-- Video -->
+              <video 
+                v-else-if="project.mediaType === 'video'"
+                :src="project.iconUrl"
+                :alt="project.name"
+                class="project-media video"
+                muted
+                loop
+                preload="metadata"
+                @mouseenter="playVideo($event)"
+                @mouseleave="pauseVideo($event)"
+              />
             </div>
+            
             <div class="title-bar" :style="{ 'background-color': project.accentColor + 'DD' }">
                 <div class="title-text">
                   {{ project.name }}
-                  <!-- Show company name for professional projects -->
                   <div v-if="project.category === 'professional' && project.company" class="company-name">
                     @ {{ project.company }}
                   </div>
                 </div>
             </div>
-            <!-- Show non-clickable indicator -->
             <div v-if="project.clickable === false" class="non-clickable-overlay">
               <div class="non-clickable-text">In Progress</div>
             </div>
@@ -63,7 +92,6 @@ export default Vue.extend({
   },
   methods: {
     showDetails: function (item: ProjectData) {
-      // Only show popup if project is clickable
       if (item.clickable === false) return;
       
       this.popupTitle = item.name;
@@ -72,14 +100,53 @@ export default Vue.extend({
       this.showPopup = true;
       window.scrollTo(0,0);
     },
+    playVideo(event: Event) {
+      const target = event.target as HTMLVideoElement;
+      if (target.tagName === 'VIDEO') {
+        target.play();
+      }
+    },
+    pauseVideo(event: Event) {
+      const target = event.target as HTMLVideoElement;
+      if (target.tagName === 'VIDEO') {
+        target.pause();
+        target.currentTime = 0;
+      }
+    },
   },
 });
 </script>
+
+
 
 <style scoped>
 .projects-list {
   /* Your existing styles */
 }
+
+.project-item-media {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s;
+}
+
+.project-item:not(.not-clickable):hover .project-media {
+  transform: scale(1.1);
+}
+
+/* Ensure videos don't show controls */
+.project-media.video::-webkit-media-controls {
+  display: none !important;
+}
+
 
 .project-item {
   height: 300px;
@@ -97,11 +164,7 @@ export default Vue.extend({
 }
 
 .project-item-image {
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  transition: all 0.2s;
+  display: none;
 }
 
 .project-item:not(.not-clickable) .project-item-image:hover {
