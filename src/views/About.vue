@@ -1,23 +1,30 @@
 <template>
   <div style="margin-bottom: 80px;">
-    <h1>Hello!</h1>
+    <h1>Peace be upon you!</h1>
+<div class="paragraph">
+  <div>
+    I'm <strong>Behram Khan</strong>, a passionate <strong>Game Developer</strong> who loves bringing ideas to life through code and design.<br/>
+    I mostly work in <strong>Unity</strong> and enjoy discussing creative concepts, building gameplay systems, and experimenting with new mechanics that make games fun and meaningful.
+  </div>
 
-    <div class="paragraph">
-      <div>
-        I'm <strong>John Matrix</strong>, a former Delta Force operative, now a hobbyist lumberjack.<br/>
-        I spend my days living alone with my daughter Jenny, and cutting trees and carrying trunks around to keep in shape.
-      </div>
+  <div style="margin-top: 20px;">
+    Besides games, I love creating apps and tools that help with <strong>productivity, mental health, and education</strong>.  
+    I’m currently working on small projects to strengthen my <strong>gameplay logic</strong> and <strong>programming skills</strong>.
+  </div>
 
-      <div style="margin-top: 20px;">I've worked on  <router-link to="/game-projects">stuff</router-link>, on <router-link to="/other-projects">other stuff</router-link>, and took part in <router-link to="/resume">a few things</router-link> as well.</div>
+  <div style="margin-top: 40px;">
+    In the future, I aim to make <strong>online games more secure</strong> — a safer, fairer space for everyone.  
+    
+    You can reach me at <a href="mailto:khanbehram66@gmail.com">khanbehram66@gmail.com</a> or <router-link to="/contact">contact me here</router-link>.
+  </div>
+</div>
 
-      <div style="margin-top: 40px;">I'm <strong>currently looking for a job</strong> as a monk, like my good friend John Rambo did a few years back. You can reach me at <a href="mailto:johnmatrix@deltaforce.us">johnmatrix@deltaforce.us</a> or <router-link to="/contact">through here</router-link>.</div>
-    </div>
+<div class="photo">
+  <img src="img/behram.png" alt="Avatar of Behram" /> 
+</div>
 
-    <div class="photo">
-      <img src="img/avatar.png" alt="Avatar of John" /> 
-    </div>
+<div style="clear:both"></div>
 
-    <div style="clear:both"></div>
 
   </div>
 </template>
@@ -32,6 +39,11 @@
   margin-top: 50px;
   text-align: center;
 }
+.photo img {
+  height: 300px;
+  width: 300px;
+}
+
 
 @media only screen and (min-width: 620px){
   .paragraph {
@@ -40,7 +52,7 @@
 
   .photo {
     float: left;
-    padding: 10px;
+    padding: 30px;
     padding-left: 80px;
   }
 }
