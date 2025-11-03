@@ -54,7 +54,7 @@
           :style="{ 'background-image': 'url(' + blog.coverImage + ')' }"
         ></div>
         <div class="blog-card-content">
-          <h3 class="blog-title">{{ blog.title }}</h3>
+          <h3 class="blog-title">{{ blog.name }}</h3>
           <p class="blog-excerpt">{{ blog.excerpt }}</p>
           <div class="blog-meta">
             <span class="blog-date">{{ formatDate(blog.publishDate) }}</span>
@@ -139,7 +139,7 @@ export default Vue.extend({
       }
       
       // Safely check search matches
-      const titleMatch = blog.title?.toLowerCase().includes(query) || false;
+      const titleMatch = blog.name?.toLowerCase().includes(query) || false;
       const excerptMatch = blog.excerpt?.toLowerCase().includes(query) || false;
       const tagMatch = blogTags.some(tag => tag?.toLowerCase().includes(query)) || false;
       
