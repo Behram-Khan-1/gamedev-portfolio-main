@@ -38,7 +38,17 @@ const routes: Array<RouteConfig> = [
   {
     path: '*',
     redirect: '/404'
-  }
+  },
+  {
+  path: '/blogs',
+  name: 'Blogs',
+  component: () => import('@/views/Blogs.vue')
+},
+{
+  path: '/blog/:id',
+  name: 'BlogPost',
+  component: () => import('@/views/BlogPost.vue')
+}
 
 ]
 

@@ -4,16 +4,28 @@
         <template v-for="project in projects">
           <div
             :key="project.id"
-              @click="showDetails(project)"
-              class="project-item"
-              :class="{ 'wide': project.isWide, 'high': project.isHigh }">
+            @click="project.clickable !== false ? showDetails(project) : null"
+            class="project-item"
+            :class="{ 
+              'wide': project.isWide, 
+              'high': project.isHigh,
+              'not-clickable': project.clickable === false
+            }">
             <div class="project-item-image" :style="{ 'background-image': 'url(' + project.iconUrl + ')' }">
             </div>
             <div class="title-bar" :style="{ 'background-color': project.accentColor + 'DD' }">
                 <div class="title-text">
                   {{ project.name }}
+                  <!-- Show company name for professional projects -->
+                  <div v-if="project.category === 'professional' && project.company" class="company-name">
+                    @ {{ project.company }}
+                  </div>
                 </div>
-              </div>
+            </div>
+            <!-- Show non-clickable indicator -->
+            <div v-if="project.clickable === false" class="non-clickable-overlay">
+              <div class="non-clickable-text">In Progress</div>
+            </div>
           </div>
         </template>
       </div>
@@ -51,9 +63,9 @@ export default Vue.extend({
   },
   methods: {
     showDetails: function (item: ProjectData) {
-      // if (event) {
-      //   alert(event.target);
-      // }
+      // Only show popup if project is clickable
+      if (item.clickable === false) return;
+      
       this.popupTitle = item.name;
       this.popupColor = item.accentColor;
       this.popupContent = item.htmlDescription;
@@ -65,6 +77,9 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+.projects-list {
+  /* Your existing styles */
+}
 
 .project-item {
   height: 300px;
@@ -73,6 +88,12 @@ export default Vue.extend({
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
+}
+
+.project-item.not-clickable {
+  cursor: not-allowed;
+  opacity: 0.8;
 }
 
 .project-item-image {
@@ -82,14 +103,13 @@ export default Vue.extend({
   width: 100%;
   transition: all 0.2s;
 }
-.project-item-image:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
+
+.project-item:not(.not-clickable) .project-item-image:hover {
   transform: scale(1.1);
 }
 
-.project-item:hover {
-filter: brightness(120%);
+.project-item:not(.not-clickable):hover {
+  filter: brightness(120%);
 }
 
 .title-bar {
@@ -101,6 +121,37 @@ filter: brightness(120%);
 
 .title-text {
   padding: 10px;
+  position: relative;
+}
+
+.company-name {
+  font-size: 0.8em;
+  opacity: 0.9;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+/* Non-clickable overlay */
+.non-clickable-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.non-clickable-text {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid white;
 }
 
 @media only screen and (min-width: 620px){
@@ -124,8 +175,9 @@ filter: brightness(120%);
   .high {
     grid-row-end: span 2;
   }
+
+  .company-name {
+    font-size: 0.7em;
+  }
 }
-
-
-
 </style>

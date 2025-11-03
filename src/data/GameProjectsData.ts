@@ -1,42 +1,69 @@
 import ProjectData from '@/data/ProjectData'
 
 export default [
-    new ProjectData("project-1", " Chubby", "img/projects/project-1-icon.png", 
-    `
-    <div class="paragraph">
-     <strong>Optimistic Chubby</strong> is a thing of beauty that I am so proud of. It's available on Android because why not.
-     <br/>Image by <a href="https://www.pexels.com/fr-fr/@knownasovan" target="_blank">OVAN</a>.
-    </div>
-    <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="paragraph center">
-        <a href="https://play.google.com/store/apps/details?id=some.playstore.thing" target="_blank"><img src="img/projects/play-store-logo.png" alt="Play Store badge" /></a>
-    </div>
-    <div class="paragraph center">
-        <a href="https://play.google.com/store/apps/details?id=some.playstore.thing" target="_blank"><img src="img/projects/play-store-logo.png" alt="Play Store badge" /></a>
-    </div>
+   
+new ProjectData("project-1", "test", "/img/projects/project-1-icon.png", `
+<div class="paragraph">
+  <strong>test</strong> test
+</div>
+<div class="paragraph center">
+  <iframe class="youtube" src="https://www.youtube.com/embed/a" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="paragraph center">
+ <div class="store-badges-row">
+  <a href="a" target="_blank"><img src="img/projects/playstore-logo.png" alt="Play Store badge" /></a>
+  <a href="a" target="_blank"><img src="img/projects/itch-logo.png" alt="Itch.io badge" /></a>
+  <a href="a" target="_blank"><img src="img/projects/github-logo.png" alt="Itch.io badge" /></a>
+   </div>
+</div>
+<div class="paragraph">
+  Main features :
+  <ul>
+        <li>abc</li>
+    <li>abc</li>
+  </ul>
+</div>
+<div class="paragraph center">
+    <img class="phone-screenshot" src="aa" alt="test Screenshot" />
+  <img class="phone-screenshot" src="a" alt="test Screenshot" />
+</div>`, "#23bd69", false, true, "professional", "Self", true),
 
-    <div class="paragraph">
-        Main features :
-        <ul>
-        <li>Some stuff</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
-        <li>And then some</li>
-        <li>And then some</li>
-        <li>And then some</li>
-        <li>And then some</li>
 
-        </ul>
-    </div>
+new ProjectData("project-8", "test-prof", "/img/projects/project-8-icon.png", `
+<div class="paragraph">
+  <strong>test-prof</strong> asdfasdf
+</div>`, "#23bd69", true, false, "professional", "fasdfae", false),
 
-    <div class="paragraph center">
-        <img class="phone-screenshot" src="https://fakeimg.pl/300x534/" alt="Optimistic Chubby Screenshot" />
-        <img class="phone-screenshot" src="https://fakeimg.pl/300x534/" alt="Optimistic Chubby Screenshot" />
-    </div>
-    `, "#23bd69", true),
+
+new ProjectData("project-9", "asdfasdf", "img/projects/project-9-icon.png", `
+<div class="paragraph">
+  <strong>asdfasdf</strong> safasefasf
+</div>
+<div class="paragraph center">
+  <iframe class="youtube" src="https://www.youtube.com/embed/as" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="paragraph center">
+ <div class="store-badges-row">
+  <a href="as" target="_blank"><img src="img/projects/playstore-logo.png" alt="Play Store badge" /></a>
+  <a href="as" target="_blank"><img src="img/projects/itch-logo.png" alt="Itch.io badge" /></a>
+  
+   </div>
+</div>
+<div class="paragraph">
+  Main features :
+  <ul>
+        <li>asdf</li>
+    <li>asdf</li>
+    <li>asfd</li>
+  </ul>
+</div>
+<div class="paragraph center">
+    <img class="phone-screenshot" src="img/projects/project-2-icon.png" alt="asdfasdf Screenshot" />
+  <img class="phone-screenshot" src="img/projects/project-2-icon.png" alt="asdfasdf Screenshot" />
+</div>`, "#23bd69", true),
+    
+
+    
 
     new ProjectData("project-2", "Singing Addict", "img/projects/project-2-icon.png", `
     <div class="paragraph">
@@ -71,6 +98,7 @@ export default [
     <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Singing Addict Screenshot" />
     </div>
     `, "#5a78af"),
+    
 
 
     new ProjectData("project-3", "Drawing Overload", "img/projects/project-3-icon.png", `

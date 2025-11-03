@@ -40,6 +40,55 @@
         opacity: 0.6;
     }
 
+
+
+      // Add store badges styling for live portfolio
+    .store-badges-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+
+    .store-badges-row a {
+        text-decoration: none;
+        opacity: 1;
+        transition: opacity 0.2s ease;
+    }
+
+    .store-badges-row a:hover {
+        opacity: 0.7;
+        text-decoration: none;
+    }
+
+    .store-badges-row img {
+        height: 40px;
+        width: auto;
+    }
+
+    // Make Itch.io icon smaller
+    .store-badges-row img[alt*="itch"],
+    .store-badges-row img[src*="itch"] {
+        height: 32px !important;
+    }
+
+    // Make GitHub icon slightly smaller
+    .store-badges-row img[alt*="github"],
+    .store-badges-row img[src*="github"] {
+        height: 36px !important;
+    }
+
+    // Make Play Store icon standard size
+    .store-badges-row img[alt*="playstore"],
+    .store-badges-row img[src*="playstore"] {
+        height: 45px !important;
+    }
+
+
+
+
     @media only screen and (min-width: 620px){
         iframe.youtube {
             max-width: 728px;
@@ -54,6 +103,28 @@
         .pc-screenshot {
             margin: 15px;
             width : 400px;
+        }
+               .store-badges-row {
+            gap: 20px;
+        }
+        
+        .store-badges-row img {
+            height: 45px;
+        }
+        
+        .store-badges-row img[alt*="itch"],
+        .store-badges-row img[src*="itch"] {
+            height: 36px !important;
+        }
+        
+        .store-badges-row img[alt*="github"],
+        .store-badges-row img[src*="github"] {
+            height: 40px !important;
+        }
+        
+        .store-badges-row img[alt*="playstore"],
+        .store-badges-row img[src*="playstore"] {
+            height: 50px !important;
         }
     }
 }
