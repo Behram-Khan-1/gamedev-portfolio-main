@@ -128,13 +128,13 @@ export default Vue.extend({
         this.selectedTags.every(tag => blogTags.includes(tag));
       
       if (!matchesTags) {
-        console.log('Blog filtered out by tags:', blog.title);
+        console.log('Blog filtered out by tags:', blog.name);
         return false;
       }
       
       // Search filter
       if (query === "") {
-        console.log('No search query, returning blog:', blog.title);
+        console.log('No search query, returning blog:', blog.name);
         return true;
       }
       
@@ -144,7 +144,7 @@ export default Vue.extend({
       const tagMatch = blogTags.some(tag => tag?.toLowerCase().includes(query)) || false;
       
       const matchesSearch = titleMatch || excerptMatch || tagMatch;
-      console.log(`Blog "${blog.title}": titleMatch=${titleMatch}, excerptMatch=${excerptMatch}, tagMatch=${tagMatch}, overall=${matchesSearch}`);
+      console.log(`Blog "${blog.name}": titleMatch=${titleMatch}, excerptMatch=${excerptMatch}, tagMatch=${tagMatch}, overall=${matchesSearch}`);
       
       return matchesSearch;
     });
