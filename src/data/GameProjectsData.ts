@@ -83,24 +83,35 @@ https://www.thenews.com.pk/print/1078214-virtual-science-laboratory-on-cards-to-
   <img class="phone-screenshot" src="https://i.ibb.co/7dMsdsLn/IMG-20251103-WA0017.jpg" alt="Poha eLab — Educational Simulation Initiative (Pakistan) Screenshot" />
 </div>`, "#02006b", true, true, "professional", "Pakistan KPK Government", true, "image"),
 
-new ProjectData("project-4", "Flying Endless Runner (In Development)", "/img/projects/project-4-icon.png", `
+
+new ProjectData("project-9", "Rougelike Shooter", "/img/projects/6.gif", `
 <div class="paragraph">
-  <strong>Flying Endless Runner (In Development)</strong> Role: Game Designer & Developer<br>
-Engine: Unity<br><br>
+  <strong>Rougelike Shooter</strong> Role: Developer & Instructor
+Language: Java (AWT/Swing)
+</div>
+<div class="paragraph center">
+  <iframe class="youtube" src="https://www.youtube.com/embed/https://youtu.be/4XZgP4AaV9Y" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="paragraph center">
+  <div class="store-badges-row">
+        <a href="https://github.com/Behram-Khan-1/RougeLike2025" target="_blank"><img src="/img/projects/github-logo.png" alt="github badge" /></a>
+  </div>
+</div>
+<div class="paragraph">
+  Roguelike Shooter is a top-down roguelike shooter built entirely in pure Java, created as a teaching project for students at the University of Engineering and Technology, Peshawar. The goal was to help students understand object-oriented programming, AI state machines, dynamic difficulty and Github ,all without using any external game engine.<br/><br/>🎮 Gameplay Overview<br/>You play as a square-shaped survivor fighting off waves of enemies, collecting hearts to heal, and opening random chests to upgrade your stats and survive longer.<br/><br/>👾 Enemies & AI<br/>There are four enemy types, each with unique AI behavior and interaction:<br/>🟥 Square (Basic Enemy) – Standard shooter that fires directly at the player.<br/>💎 Diamond (Tank) – Slow but durable, providing cover to nearby allies.<br/>⚪ Circle (Assault Type) – Fast and aggressive, firing triple spread shots.<br/>🟩 Healer – Non-attacking unit that periodically heals allies within range.<br/><br/>Each enemy runs on a state-driven AI system consisting of:<br/>Idle/Patrol – Random movement when the player isn’t visible.<br/>Chase – Moves toward the player once detected.<br/>Attack – Fires when within range.<br/>AI behavior updates dynamically based on distance, obstacles, and player actions.<br/><br/>💰 Loot & Progression<br/>Enemies drop coins, and hearts spawn randomly for healing.<br/>Players can use coins to unlock random chests of varying rarity, each providing buffs like:<br/>Increased health<br/>Higher damage<br/>Faster attack rate<br/>Better critical chance<br/><br/>⚙️ Technical Highlights<br/>Pure Java Implementation – Built without external libraries or engines.<br/>OOP Architecture – Modular classes for Player, Enemy, Projectile, Chest, and PowerUps.<br/>AI State Machines – Independent logic for each enemy type.<br/>Dynamic Difficulty – Enemies scale with time and player performance.<br/>Custom Collision System – Handles walls, bullets, and entities.<br/><br/>🎯 My Focus<br/>Designing a clean OOP architecture with extendable class hierarchies.<br/>Teaching students how to implement modular AI state machines.<br/>Simulating team synergy mechanics like tanks and healers.<br/>Balancing pacing and difficulty through dynamic scaling systems.
+</div>
+<div class="paragraph">
+  Main features :
+  <ul>
+        <li>Player movement & shooting</li>
+    <li>Walls block player and enemy projectiles</li>
+    <li>4 distinct enemy types</li>
+    <li>State-based AI system</li>
+    <li>Healing & stat upgrades</li>
+    <li>Scaling difficulty</li>
+  </ul>
+</div>`, "#970707", true, false, "professional", "University of Engineering and Technology, Peshawar", true, "gif"),
 
-At Aptech Media, I’m developing a unique flying endless runner designed specifically for mobile platforms.<br>
-The project focuses on creating a smooth, responsive, and satisfying flying experience, blending intuitive controls with engaging obstacle-dodging gameplay.<br><br>
-
-As the sole developer and designer, I handled:<br>
-✈️ Level Design & Game Flow – Balancing speed, distance, and difficulty curves to maintain a natural sense of progression.<br>
-🧠 Game Design Research – Studied papers and analyzed successful endless runners to refine the game’s feel, pacing, and obstacle patterns.<br>
-🔁 Object Pooling & Optimization – Built efficient spawning and performance systems for mobile devices.<br>
-🎨 UI/UX Design – Collaborated with a Figma designer to create a visually distinctive interface, then implemented and animated it within Unity.<br>
-🪨 Obstacle Creation – Designed obstacle logic and placement using assets modeled by the 3D artist.<br><br>
-
-This project has been a deep dive into player experience design, teaching me how subtle adjustments in timing, feedback, and rhythm define how a game feels.<br>
-I read research papers on how endless runner games make it engaging and their difficulty scaling.
-</div>`, "#930b5a", true, false, "professional", "Aptech Media", true, "image"),
 
 new ProjectData("project-5", "DNA Racing — Deterministic Racing Simulation", "/img/projects/DNARACING.gif", `
 <div class="paragraph">
@@ -157,6 +168,25 @@ Working closely with a senior developer, I learned the full production cycle of 
 This experience strengthened my understanding of iteration, optimization, and efficient reuse of codebases, helping me see how professional studios streamline game production.
 </div>`, "#19828a", false, false, "professional", "Metal Heart Game Studio", true, "image"),
 
+new ProjectData("project-4", "Flying Endless Runner (In Development)", "/img/projects/project-4-icon.png", `
+<div class="paragraph">
+  <strong>Flying Endless Runner (In Development)</strong> Role: Game Designer & Developer<br>
+Engine: Unity<br><br>
+
+At Aptech Media, I’m developing a unique flying endless runner designed specifically for mobile platforms.<br>
+The project focuses on creating a smooth, responsive, and satisfying flying experience, blending intuitive controls with engaging obstacle-dodging gameplay.<br><br>
+
+As the sole developer and designer, I handled:<br>
+✈️ Level Design & Game Flow – Balancing speed, distance, and difficulty curves to maintain a natural sense of progression.<br>
+🧠 Game Design Research – Studied papers and analyzed successful endless runners to refine the game’s feel, pacing, and obstacle patterns.<br>
+🔁 Object Pooling & Optimization – Built efficient spawning and performance systems for mobile devices.<br>
+🎨 UI/UX Design – Collaborated with a Figma designer to create a visually distinctive interface, then implemented and animated it within Unity.<br>
+🪨 Obstacle Creation – Designed obstacle logic and placement using assets modeled by the 3D artist.<br><br>
+
+This project has been a deep dive into player experience design, teaching me how subtle adjustments in timing, feedback, and rhythm define how a game feels.<br>
+I read research papers on how endless runner games make it engaging and their difficulty scaling.
+</div>`, "#930b5a", true, false, "professional", "Aptech Media", true, "image"),
+
 
 //INDIE GAMES
 
@@ -175,11 +205,17 @@ new ProjectData("project-7", "Chemistry Experiment Prototype", "https://i.ibb.co
   </ul>
 </div>`, "#737373", false, true, "indie", "Aptech Media", true, "image"),
 
+
 new ProjectData("project-8", "More will be uploaded soon", "/img/projects/project-9-icon.png", `
 <div class="paragraph">
   <strong>More will be uploaded soon</strong>
 </div>`, "#000000", false, false, "indie", "Aptech Media", false, "image"),
+
+
+
+
 ];
+
 
 
 
