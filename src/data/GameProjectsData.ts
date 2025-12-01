@@ -205,14 +205,43 @@ new ProjectData("project-7", "Chemistry Experiment Prototype", "https://i.ibb.co
   </ul>
 </div>`, "#737373", false, true, "indie", "Aptech Media", true, "image"),
 
+//Game Jam
 
-new ProjectData("project-8", "More will be uploaded soon", "/img/projects/project-9-icon.png", `
+new ProjectData("project-10", "BE CUTE", "https://i.ibb.co/QvcGNz4r/61873874-7f31-4352-9b8d-43c33de36f2b-1.jpg", `
 <div class="paragraph">
-  <strong>More will be uploaded soon</strong>
-</div>`, "#000000", false, false, "indie", "Aptech Media", false, "image"),
-
-
-
+  Round is cute, Squares are cool!
+You are born into a world where being round is superior and anything not round is to be made round FORCEFULLY.
+</div>
+<div class="paragraph center">
+  <iframe class="youtube" src="https://www.youtube.com/embed/https://youtu.be/XVRsFk7axu8" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="paragraph center">
+  <div class="store-badges-row">
+        <a href="https://behram-khan.itch.io/be-cute" target="_blank"><img src="/img/projects/itch-logo.png" alt="itch badge" /></a>
+  </div>
+</div>
+<div class="paragraph">
+  Made this game for Aalto University GN Jam 2025 and the theme was CUTE.<br/>Initially, I had the idea to make a game about tearing faces of different characters into perfect round shapes and the NPCs will react to your cutting skills but I dropped that idea.<br/>I made a game about a psycho (me) who has grown up in a world where round shapes have fought wars against other shapes and now I am doing the other shapes a favor by making them round forcefully. We basically beat the others, animals included and smooth them out. <br/>I has no clue on the characters so I just made me and the hosts, Miss Solip and Miss Anna.<br/><br/>It was my first time making an isometric game, combat system as you can see the punching and combo systems are not the best. I made cutscenes for the first time too, they were super easy. <br/>The harder part was planning the areas, how the game should look, where enemies should be, how should I progress and most importantly how should the player feel like this game is cute even if its violent. <br/><br/>We have different square faces for the human NPC, after hitting them they bleed too and then convert to a cute round face. <br/>I gave Miss Solip the Naruto run and also a grenade launcher.
+</div>
+<div class="paragraph">
+  Main features :
+  <ul>
+        <li>Isometric Controller</li>
+    <li>Cutscenes</li>
+    <li>Combat System + Combo System</li>
+    <li>Animations</li>
+  </ul>
+</div>
+<div class="paragraph center">
+    <img class="phone-screenshot" src="https://i.ibb.co/SX9q5yXF/image.png" alt="BE CUTE Screenshot" />
+  <img class="phone-screenshot" src="https://i.ibb.co/67WpCmj7/image.png" alt="BE CUTE Screenshot" />
+  <img class="phone-screenshot" src="https://i.ibb.co/bRqHGXmx/image.png" alt="BE CUTE Screenshot" />
+  <img class="phone-screenshot" src="https://i.ibb.co/d0krqJ7s/image.png" alt="BE CUTE Screenshot" />
+  <img class="phone-screenshot" src="https://i.ibb.co/B2KP0g9j/image.png" alt="BE CUTE Screenshot" />
+  <img class="phone-screenshot" src="https://i.ibb.co/LVSScmJ/b1.png" alt="BE CUTE Screenshot" />
+  <img class="phone-screenshot" src="https://i.ibb.co/XZd3m7Mz/Chat-GPT-Image-Nov-12-2025-10-35-55-AM.png" alt="BE CUTE Screenshot" />
+  <img class="phone-screenshot" src="https://i.ibb.co/t0LCT4v/anna-round.jpg" alt="BE CUTE Screenshot" />
+</div>`, "#14a977", false, false, "gamejams", "", true, "image"),
 
 ];
 

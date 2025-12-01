@@ -1,6 +1,6 @@
 <template>
   <div style="margin-bottom: 80px;">
-    <h1>Peace be upon you!</h1>
+    <h1>Hello!</h1>
 <div class="paragraph">
   <div>
     I'm <strong>Behram Khan</strong>, a passionate <strong>Game Developer</strong> who loves bringing ideas to life through code and design.<br/>
