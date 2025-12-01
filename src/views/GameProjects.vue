@@ -1,5 +1,5 @@
 <template>
-  <div style="max-width: 900px;">
+  <div">
     <h1>Games</h1>
 
     <div style="margin-bottom: 30px;">
