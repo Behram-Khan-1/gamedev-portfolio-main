@@ -100,7 +100,7 @@ h1 {
   }
 
   .main {
-    padding: 0px 40px 40px 180px;
+    padding: 0px 40px 40px 40px;
   }
 
   .main, .header, .footer {
