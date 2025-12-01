@@ -121,6 +121,7 @@ export default Vue.extend({
 
 <style scoped>
 .projects-outer-div {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
