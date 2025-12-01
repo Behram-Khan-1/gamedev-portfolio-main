@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="projects-outer-div">
       <div class="projects-list">
         <template v-for="project in projects">
           <div
@@ -120,6 +120,10 @@ export default Vue.extend({
 
 
 <style scoped>
+.projects-outer-div {
+  align-items: center;
+  justify-content: center;
+}
 .projects-list {
   /* Your existing styles */
 }
