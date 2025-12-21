@@ -20,7 +20,7 @@
 
     <ProjectsList v-bind:projects="filteredProjects" />
 
-    <div style="margin-top: 20px;">
+    <div style="margin-top: 20px; ">
     
     </div>
   </div>

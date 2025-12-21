@@ -35,7 +35,7 @@
       <div class="tech-stack">C++, Java, Unity, Education Design</div>
 
       <h3>Game Developer – Aptech Media</h3>
-      <h4>Feb 2025 – July 2025</h4>
+      <h4>Jan 2025 – December 2025</h4>
       <div>
         Built a deterministic bike racing AI with realistic racing behavior and a character animation app with facial expressions, animation blending, and real-time lipsync.
       </div>

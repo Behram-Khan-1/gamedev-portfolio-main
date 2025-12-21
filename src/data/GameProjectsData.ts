@@ -7,34 +7,7 @@ export default [
 
 new ProjectData("project-1", "A Ranger’s Journey — Educational Wildlife Game for Kids", "/img/projects/rangersjourney.gif", `
 <div class="paragraph">
-  <strong>A Ranger’s Journey — Educational Wildlife Game for Kids</strong> <br>
-Role: Lead Designer & Project Manager <br>
-Engine: Unreal Engine 4
-<br>
-Game Videos: https://drive.google.com/drive/folders/1cJa68Bm0u3rgnsHMbNpEJabtnn90x8qg
-
-<br>
-<br>
-
-A Ranger’s Journey is an educational adventure game created as my Final Year Project, aimed at teaching children about wildlife conservation through exploration and storytelling.
-Players take on the role of a forest ranger, guided by a senior ranger over radio communication, learning how to interact with wild animals and protect nature responsibly.
-<br>
-
-The idea was inspired by the 2022 floods in Pakistan, which devastated wildlife sanctuaries and forests, leading many locals to rely on firewood for survival — a short-term solution with long-term ecological costs.
-<br>
-The game encourages players to understand these challenges, promoting awareness of tree cutting, animal rescue, and coexisting with wildlife.
-<br>
-
-I handled the complete visual and experiential design — from initial concept to final polish. <br>
-This included:<br>
-Environment & Level Design<br>
-Scenario Planning & Storytelling<br>
-Materials, Lighting & World Building<br>
-Sound Design<br>
-Character Animations (using Cascadeur & Blender)<br> <br>
-
-Hardest part of the project wasn't making it but trying to communicate with two people who barely spoke but could code (cool guys tho).
-<br>
+  <strong>A Ranger’s Journey — Educational Wildlife Game for Kids</strong> Role: Lead Designer &amp; Project Manager Engine: Unreal Engine 4
 </div>
 <div class="paragraph center">
   <div class="store-badges-row">
@@ -42,13 +15,17 @@ Hardest part of the project wasn't making it but trying to communicate with two 
   </div>
 </div>
 <div class="paragraph">
+  Game Videos: https://drive.google.com/drive/folders/1cJa68Bm0u3rgnsHMbNpEJabtnn90x8qg <br/><br/>A Ranger’s Journey is an educational adventure game created as my Final Year Project, aimed at teaching children about wildlife conservation through exploration and storytelling. Players take on the role of a forest ranger, guided by a senior ranger over radio communication, learning how to interact with wild animals and protect nature responsibly. The idea was inspired by the 2022 floods in Pakistan, which devastated wildlife sanctuaries and forests, leading many locals to rely on firewood for survival — a short-term solution with long-term ecological costs. <br/>The game encourages players to understand these challenges, promoting awareness of tree cutting, animal rescue, and coexisting with wildlife. I handled the complete visual and experiential design — from initial concept to final polish. This included: Environment and Level Design, Scenario Planning, Storytelling Materials, Lighting, World Building, Sound Design and Character Animations (using Cascadeur &amp; Blender). <br/>The hardest part of the project wasn't making it, but trying to communicate with two people who barely spoke but could code (cool guys tho).
+</div>
+<div class="paragraph">
   Main features :
   <ul>
-        <li> Camera System – Capture photos and videos of animals to update an in-game logbook with educational facts.</li>
+        <li>Camera System – Capture photos and videos of animals to update an in-game logbook with educational facts.</li>
     <li>Exploration & Learning – Observe animals in their natural habitats and discover how to care for the environment.</li>
     <li>Kid-Friendly Design – Built to educate safely, avoiding any actions children could imitate in real life (like giving medicine to animals).</li>
   </ul>
-</div>`, "#015b07", true, false, "professional", "University Of Engineering and Technology, Peshawar", true, "gif"),
+</div>`, "#015b07", false, false, "professional", "", true, "gif"),
+
 
 new ProjectData("project-2", "Poha eLab — Educational Simulation Initiative (Pakistan)", "/img/projects/PohaLab.jpg", `
 <div class="paragraph">
@@ -148,27 +125,7 @@ This project deepened my understanding of simulation design,  deterministic syst
   <img class="phone-screenshot" src="https://i.ibb.co/TDcGV3V5/rac1.png" alt="DNA Racing — Deterministic Racing Simulation Screenshot" />
 </div>`, "#36677c", false, true, "professional", "Aptech Media", true, "gif"),
 
-new ProjectData("project-6", "Joygram - Ongoing", "/img/projects/mickey.gif", `
-<div class="paragraph">
-  <strong>Joygram - Ongoing</strong>
-</div>`, "#a22020", false, false, "professional", "Aptech Media", false, "gif"),
-
-new ProjectData("project-3", "Spider Man and Assassain Creed Clones", "/img/projects/project-3-icon.png", `
-<div class="paragraph">
-  <strong>Spider Man and Assassain Creed Clones</strong> Role: Junior Game Developer <br>
-https://metalheartgame.com <br>
-<br>
-During my time at Metal Heart Game Studio, I contributed to two mobile titles — including a Spider-Man–style action game for Android and animation work for other projects, such as recreating Assassin’s Creed’s iconic Leap of Faith.
-<br>
-I will find links for the games and upload them. 
-
-<br> <br>
-Working closely with a senior developer, I learned the full production cycle of mobile games — from polishing and finalizing a title to reusing and rebuilding systems for new projects. This involved adapting assets, UI, and gameplay events while maintaining performance and player experience.
-<br>
-This experience strengthened my understanding of iteration, optimization, and efficient reuse of codebases, helping me see how professional studios streamline game production.
-</div>`, "#19828a", false, false, "professional", "Metal Heart Game Studio", true, "image"),
-
-new ProjectData("project-4", "Flying Endless Runner (In Development)", "/img/projects/project-4-icon.png", `
+new ProjectData("project-4", "Flying Endless Runner (In Development)", "/img/projects/SegaOfWings.png", `
 <div class="paragraph">
   <strong>Flying Endless Runner (In Development)</strong> Role: Game Designer & Developer<br>
 Engine: Unity<br><br>
@@ -186,6 +143,36 @@ As the sole developer and designer, I handled:<br>
 This project has been a deep dive into player experience design, teaching me how subtle adjustments in timing, feedback, and rhythm define how a game feels.<br>
 I read research papers on how endless runner games make it engaging and their difficulty scaling.
 </div>`, "#930b5a", true, false, "professional", "Aptech Media", true, "image"),
+
+
+
+new ProjectData("project-6", "Joygram - On Hold", "/img/projects/mickey.gif", `
+<div class="paragraph">
+  <strong>Joygram - On Hold</strong> Joygram — AI-Powered Animated Greeting App
+</div>
+<div class="paragraph">
+  Role: Sole Unity Programmer<br/>Platform: iOS<br/>Engine: Unity<br/>Status: On Hold<br/><br/>Joygram is an AI-powered animated greeting app that allows users to create personalized video messages using famous cartoon-style characters (e.g., Bluey, Mickey Mouse–style characters, Cocomelon–style characters).<br/><br/>The user selects a character, enters a name, and provides a short prompt (for example: “Happy birthday Behram”). The system then expands this input into a 30–40 second personalized script, generates a character-matched AI voice, and plays a fully animated performance synced to the audio.<br/><br/>I was the only programmer on the project and implemented the entire system in Unity, handling both logic and real-time animation control.<br/><br/>My Role<br/>Designed and implemented the core animation playback system.<br/>Built the logic for timing, facial expressions, and mouth synchronization.<br/>Integrated assets from other team members, including models, rigs, animations, and UI designs, into a cohesive production pipeline.<br/>Optimized performance for iOS deployment.<br/><br/>Team Collaboration<br/>While I handled all programming, the project also involved modelers, riggers, animators, and UI designers. My responsibility was to take their assets and integrate them seamlessly into the app’s runtime systems.<br/><br/>Project Status<br/>Development is currently on hold due to client-side decisions, but the project remains a strong example of my ability to build complex, AI-driven interactive systems and manage full Unity integration independently.
+</div>
+<div class="paragraph">
+  Main features :
+  <ul>
+        <li>🧠 AI Prompt Expansion  Converts short user inputs into full-length personalized messages.</li>
+    <li>🎙️ Voice AI Integration  Generates speech in a character-appropriate voice.</li>
+    <li>🎭 Animation Selection Algorithm  Dynamically selects the most suitable body animations, facial expressions, and gestures based on speech timing and emotion.</li>
+    <li>👄 Lip Sync & Facial Animation  Custom logic to synchronize mouth movement and expressions with generated audio.</li>
+  </ul>
+</div>
+<div class="paragraph center">
+</div>`, "#a22020", false, false, "professional", "", true, "image"),
+
+new ProjectData("project-3", "Spider Man and Assassain Creed Clones", "/img/projects/spidermanswing.jpg", `
+<div class="paragraph">
+  <strong>Spider Man and Assassain Creed Clones</strong>
+</div>
+<div class="paragraph">
+  Role: Junior Game Developer <br/>https://metalheartgame.com During my time at Metal Heart Game Studio, I contributed to two mobile titles — including a Spider-Man–style action game for Android and animation work for other projects, such as recreating Assassin’s Creed’s iconic Leap of Faith. I will find links for the games and upload them. <br/><br/>Working closely with a senior developer, I learned the full production cycle of mobile games — from polishing and finalizing a title to reusing and rebuilding systems for new projects. This involved adapting assets, UI, and gameplay events while maintaining performance and player experience. This experience strengthened my understanding of iteration, optimization, and efficient reuse of codebases, helping me see how professional studios streamline game production.
+</div>`, "#19828a", false, false, "professional", "", true, "image"),
+
 
 
 //INDIE GAMES

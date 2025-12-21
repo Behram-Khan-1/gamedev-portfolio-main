@@ -376,12 +376,14 @@ export default Vue.extend({
 @media only screen and (min-width: 768px) {
   .blogs-grid {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .blogs-grid {
     grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
   }
 }
 </style>

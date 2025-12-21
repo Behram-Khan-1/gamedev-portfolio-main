@@ -99,6 +99,7 @@ export default Vue.extend({
 <style scoped>
 .blog-post {
   border: 2px solid red !important; /* See the actual boundaries */
+  margin-right: 100px;
 
   background: #f8f9fa;
   min-height: 100vh;
@@ -288,6 +289,8 @@ export default Vue.extend({
   color: white;
   border: none;
   padding: 14px 28px;
+  margin-bottom: 20px;
+  margin-top: -20px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;

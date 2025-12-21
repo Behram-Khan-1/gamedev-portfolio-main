@@ -5,6 +5,7 @@
   <div>
     I'm <strong>Behram Khan</strong>, a passionate <strong>Game Developer</strong> who loves bringing ideas to life through code and design.<br/>
     I mostly work in <strong>Unity</strong> and enjoy discussing creative concepts, building gameplay systems, and experimenting with new mechanics that make games fun and meaningful.
+    I have developer games that address social issues and educational games that help students learn new skills.
   </div>
 
   <div style="margin-top: 20px;">
@@ -13,7 +14,7 @@
   </div>
 
   <div style="margin-top: 40px;">
-    In the future, I aim to make <strong>online games more secure</strong> — a safer, fairer space for everyone.  
+    In the future, I aim to create games that include <strong> Pashtun culture </strong>, which is negatively stereotyped in the media.
     
     You can reach me at <a href="mailto:khanbehram66@gmail.com">khanbehram66@gmail.com</a> or <router-link to="/contact">contact me here</router-link>.
   </div>
